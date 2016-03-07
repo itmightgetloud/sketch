@@ -61,7 +61,7 @@ function clearBoard(){
 
 function showGrid(){
   $('#show-grid').click(function(){
-    $('.square').toggleClass('dupa');
+    $('.square').toggleClass('showBorder');
   });
 
 }
@@ -70,3 +70,4 @@ function showGrid(){
 do zrobienia:
 -zostawianie koloru (i dodanie przyciksu)
 -zapamietanie ustawien po kliknieciu "reset"
+*/

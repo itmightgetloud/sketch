@@ -72,6 +72,12 @@ li:hover{
   position: relative;
   left:48%;
 }
-.dupa{
+.showBorder{
   border: 1px solid black;
+}
+.footer{
+  background: #1A172F;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
 }
