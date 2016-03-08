@@ -1,5 +1,6 @@
 body{
-  background-color: black;
+  background: url("http://wallpaperlayer.com/img/2015/9/dark-wallpaper-2161-2322-hd-wallpapers.jpg") no-repeat center center fixed;
+  background-size: cover;
   color:#3070A6;
   font-family: arial,sans-serif;
 }
@@ -27,14 +28,6 @@ li:hover{
   right: 300px;
   top:25px;
 }
-@media (max-width: 950px) {
-  .pull-left{
-    left: 100px;
-  }
-  .pull-right{
-    right:100px;
-  }
-}
 .radio-inline{
   transition-duration:0.5s;
 }
@@ -42,42 +35,47 @@ li:hover{
   color:#A7B2D6;
 }
 .nav-bar{
-  background-color: #1A172F;
+  background-color: rgba(27, 27, 50, .4);
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .board {
-  background-color:black;
   display:table;
   margin: 0 auto;
   width:600px !important;
   height: 600px !important;
   box-sizing: content-box;
-  border: 1px solid white;
+  border: 1px solid rgba(255,255,255,.4);
+  box-shadow: 4px 4px 1px rgba(255,255,255,.1);
 }
 .square {
   content:'';
   height: 37.5px;
   width: 37.5px;
   margin:0;
-  background: rgba(255,255,255,.7);
+  background: rgba(255,255,255,.2);
   float:left;
-  transition-duration: 0.5s;
+  transition-duration: 0.7s;
 }
-/* square hover for js*/
-.hoverBlue{
-  background-color: #1A247D;
-}
+
 .btn{
   position: relative;
   left:48%;
 }
 .showBorder{
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
-.footer{
-  background: #1A172F;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 0;
+@media (max-width: 950px) {
+  .nav-bar{
+    height: 100px;
+  }
+  .pull-left{
+    left: 190px;
+    top:10px;
+  }
+  .pull-right{
+    right:240px;
+    top:50px;
+  }
 }
+

@@ -10,27 +10,33 @@
   <title>Sketch Paddo</title>
 </head>
 <body>
-  <div class='nav-bar'>
-    <div class='pull-left'>
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Random Colors
-      </label>
-      <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Blue
-      </label>
-    </div>
-    <div class='pull-right'>
-        <li id='pixel-width'>Pixel Width</li>
-        <li id='show-grid'>Show/Hide Grid</li>
-        <li id='trails'>Trails</li>
+  <div class='wrapper'>
+    <div class='nav-bar'>
+      <div class='pull-left'>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">Random Colors
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Blue
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <input class="jscolor {onFineChange:'update(this)'}" value="cc66ff">
+      </div>
+      <div class='pull-right'>
+          <li id='pixel-width'>Pixel Width</li>
+          <li id='show-grid'>Show/Hide Grid</li>
+          <li id='trails'>Trails On/Off</li>
 
-      </ul>
+        </ul>
+      </div>
     </div>
+    <br>
+    <div class='board'></div>
+    <br><button type="button" class="btn btn-primary">Reset</button>
   </div>
-  <br>
-  <div class='board'></div>
-  <br><button type="button" class="btn btn-primary">Reset</button>
-  <div class='footer'></div>
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="./js/main.js"></script>
+  <script src="./js/jscolor.js"></script>
 </body>
